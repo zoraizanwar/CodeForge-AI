@@ -78,6 +78,27 @@ CodeForge AI is an autonomous, multi-agent software engineering system. Instead 
 
 ---
 
+
+## 🖥️ Product Screenshots
+
+### Dashboard
+
+![CodeForge AI Dashboard](docs/images/codeforge-dashboard.jpeg)
+
+### Multi-Agent Workflow
+
+![CodeForge AI Workflow](docs/images/codeforge-workflow.jpeg)
+
+### Governance & Security
+
+![CodeForge AI Governance](docs/images/codeforge-governance.jpeg)
+
+### Analytics & Operations
+
+![CodeForge AI Analytics](docs/images/codeforge-analytics.jpeg)
+
+---
+
 ## Quick Start with Docker Compose (Recommended)
 
 1. **Clone the repository and set up `.env`**:
