@@ -1,0 +1,23 @@
+<h2>Skills</h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+    {% for skill in skills %}
+        <div class="card">
+            <strong style="color: #ffffff;">{{ skill.skill_name }}</strong>
+            <div class="skill">
+                <div class="bar">
+                    <div class="fill" style="width: 0;" data-width="{{ skill.level }}"></div>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>No skills found.</p>
+    {% endfor %}
+</div>
+
+<script>
+document.querySelectorAll('.fill').forEach(el => {
+    const width = el.getAttribute('data-width');
+    el.style.width = width + '%';
+});
+</script>

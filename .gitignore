@@ -1,0 +1,51 @@
+# Environments and Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Python caching & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node.js dependencies & builds
+node_modules/
+dist/
+build/
+.svelte-kit/
+.next/
+.nuxt/
+out/
+.yarn/
+*.log
+
+# IDEs and OS files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# Temporary & Local files
+scratch/
+tmp/
+temp/
+secrets/
+*.pem

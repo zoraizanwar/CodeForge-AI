@@ -1,0 +1,15 @@
+<h2>Projects</h2>
+
+<div class="project-grid">
+    {% for project in projects %}
+        <div class="project-card">
+            <strong>{{ project.name }}</strong>
+            <p>{{ project.description }}</p>
+            {% if project.link %}
+                <a href="{{ project.link }}" target="_blank" style="color: #38bdf8; font-weight: bold;">View Project →</a>
+            {% endif %}
+        </div>
+    {% empty %}
+        <p>No projects added.</p>
+    {% endfor %}
+</div>

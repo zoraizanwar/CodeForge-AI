@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoraiz Anwar | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0f172a; color: #e5e7eb; line-height: 1.7; }
+        a { text-decoration: none; color: inherit; }
+        section { padding: 80px 10%; border-bottom: 1px solid #1e293b; }
+        h1, h2 { color: #f8fafc; }
+        nav { position: sticky; top: 0; background: linear-gradient(90deg, rgba(56, 57, 59, 0.95), rgba(30, 58, 138, 0.1)); backdrop-filter: blur(10px); padding: 15px 10%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 2px solid #38bdf8; }
+        nav h3 { font-size: 24px; font-weight: 700; color: #38bdf8; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav ul li a { font-size: 15px; color: #e5e7eb; transition: 0.3s; }
+        nav ul li a:hover { color: #38bdf8; }
+        footer { text-align: center; padding: 25px; font-size: 14px; color: #94a3b8; }
+    </style>
+</head>
+<body>
+<nav>
+    <h3>Data Scientist</h3>
+    <ul>
+        <li><a href="#bio">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+    </ul>
+</nav>
+<section id="bio">{% include 'bio/bio.html' %}</section>
+<section id="education">{% include 'education/education.html' %}</section>
+<section id="skills">{% include 'skills/skills.html' %}</section>
+<section id="experience">{% include 'experience/experience.html' %}</section>
+<section id="projects">{% include 'projects/projects.html' %}</section>
+<footer>© {{ now|date:"Y" }} Zoraiz Anwar — Built with Django</footer>
+</body>
+</html>

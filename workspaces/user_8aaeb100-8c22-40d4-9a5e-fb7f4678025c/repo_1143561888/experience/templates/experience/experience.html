@@ -1,0 +1,10 @@
+<h2>Experience</h2>
+
+{% for exp in experiences %}
+    <div class="card">
+        <strong>{{ exp.title }}</strong> at {{ exp.organization }}
+        <p>{{ exp.description }}</p>
+    </div>
+{% empty %}
+    <p>No experience added.</p>
+{% endfor %}

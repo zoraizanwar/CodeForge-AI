@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Base HTML elements overrides if needed */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Custom dark mode settings */
+:root {
+  color-scheme: dark;
+}

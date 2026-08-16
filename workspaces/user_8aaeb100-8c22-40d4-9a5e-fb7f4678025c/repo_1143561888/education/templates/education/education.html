@@ -1,0 +1,12 @@
+<h2>Education</h2>
+
+<ul>
+    {% for edu in educations %}
+        <li>
+            <strong>{{ edu.degree }}</strong> —
+            {{ edu.institute }} ({{ edu.year }})
+        </li>
+    {% empty %}
+        <li>No education added.</li>
+    {% endfor %}
+</ul>

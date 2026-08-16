@@ -1,0 +1,25 @@
+<section id="bio">
+    <div class="bio-container" style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        {% if bios %}
+            {% for bio in bios %}
+                <div class="bio-content" style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                    <img src="/media/profile/zoraiz_pic_FFicYGD_OkdBOWv_nkbLgRQ.jpeg" alt="{{ bio.name }}" class="profile-pic" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #38bdf8; box-shadow: 0 10px 25px rgba(56,189,248,0.3);">
+                    <div class="bio-text" style="flex: 1;">
+                        <h1 class="name-heading" style="color: #38bdf8; font-size: 2.8rem; font-weight: 800; margin-bottom: 10px; text-shadow: 0 2px 10px rgba(56,189,248,0.2);">{{ bio.name }}</h1>
+                        <h2 style="color: #f8fafc; font-size: 1.5rem; margin-bottom: 12px;">About Me</h2>
+                        <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.6;">{{ bio.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="bio-content" style="display: flex; align-items: center; gap: 30px;">
+                <div class="profile-placeholder" style="width: 180px; height: 180px; border-radius: 50%; background: #38bdf8; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #0f172a; font-weight: bold;">ZA</div>
+                <div class="bio-text">
+                    <h1 class="name-heading" style="color: #38bdf8; font-size: 2.8rem; font-weight: 800; margin-bottom: 10px;">Zoraiz Anwar</h1>
+                    <h2 style="color: #f8fafc; font-size: 1.5rem; margin-bottom: 12px;">About Me</h2>
+                    <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.6;">Passionate Data Scientist & AI Software Engineer specializing in machine learning, full-stack web development, and cloud systems.</p>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>
