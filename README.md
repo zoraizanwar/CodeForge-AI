@@ -39,7 +39,7 @@ CodeForge AI is an autonomous, multi-agent software engineering system. Instead 
 - **Framework**: FastAPI, Python 3.13
 - **Database**: PostgreSQL with `pgvector` extension (SQLAlchemy ORM + Alembic migrations)
 - **Task Orchestration**: Custom durable DB job worker with atomic transaction claims (`FOR UPDATE SKIP LOCKED`)
-- **Testing**: pytest (183 backend unit & integration tests)
+- **Testing**: pytest (226 backend unit & integration tests)
 
 ### AI Integration
 - **LLM Engine**: Grok API (x.ai) compatibility layer with extensible `AIProvider` base class.
