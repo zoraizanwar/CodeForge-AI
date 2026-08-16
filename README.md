@@ -48,6 +48,8 @@ CodeForge AI is an autonomous, multi-agent software engineering system. Instead 
 
 ## Architecture Overview
 
+![CodeForge AI Architecture](docs/images/codeforge-architecture.png)
+
 ```text
                                ┌──────────────────────────────────────────────┐
                                │           React + Vite Frontend             │
