@@ -1,6 +1,6 @@
-# CodeForge AI - Autonomous Multi-Agent Software Engineer
+# CodeForge AI - Multi-Agent Software Engineering Platform
 
-CodeForge AI is an autonomous, multi-agent software engineering system. Instead of a conversational chatbot, CodeForge AI operates as a coordinated team of specialized AI agents capable of analyzing software repositories, proposing architectural implementation plans, generating patch diffs, running sandboxed tests, executing iterative feedback repair loops, and opening Git branches and GitHub Pull Requests under strict human approval gates.
+CodeForge AI is a human-in-the-loop, multi-agent software engineering platform. Instead of a conversational chatbot, CodeForge AI operates as a coordinated team of specialized AI agents capable of analyzing software repositories, proposing architectural implementation plans, generating patch diffs, running sandboxed tests, executing iterative feedback repair loops, and opening Git branches and GitHub Pull Requests under strict human approval gates.
 
 ---
 
@@ -150,7 +150,7 @@ pip install -r requirements.txt
 # Run migrations
 alembic upgrade head
 
-# Run backend test suite (183 tests)
+# Run backend test suite (226 tests)
 pytest -v
 
 # Start development API server
@@ -168,8 +168,8 @@ npm run dev                   # Start Vite dev server at http://localhost:5173
 
 ---
 
-## Enterprise Reliability, Disaster Recovery & High Availability (Step 20)
-CodeForge AI includes a production-grade enterprise reliability layer:
+## System Reliability, Recovery & Operational Readiness
+CodeForge AI includes reliability and operational safeguards for long-running agent workflows:
 - **Worker Leases & Heartbeats**: Worker process lease tracking with automatic expired lease reclaiming.
 - **Agent Workflow Checkpoint Recovery**: Resumes interrupted tasks, executions, and multi-agent runs from safe checkpoints.
 - **Workspace Cleanup Safety**: Root-contained directory cleanup with path traversal protection and active workspace protection.
@@ -185,6 +185,5 @@ CodeForge AI includes a production-grade enterprise reliability layer:
 - **Frontend Type Check**: 0 errors (`npm run build`).
 - **Database Migrations**: Applied through head revision `e7f10b284920`.
 
-## Enterprise RBAC & Governance
-CodeForge AI includes a full multi-tenant architecture with hierarchical role-based access control, cryptographic invitation handling, owner immutability protection, and immutable audit logs.
-
+## Access Control & Security Governance
+CodeForge AI includes organization-level access controls with hierarchical role-based permissions, secure invitation handling, repository ownership enforcement, and immutable audit logs.
